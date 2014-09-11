@@ -7,6 +7,8 @@ class Genre < ActiveRecord::Base
     'Country'
   ]
 
+  has_many :songs
+
   validates :name,
     presence: true,
     uniqueness: true,
